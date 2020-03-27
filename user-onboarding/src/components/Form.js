@@ -88,12 +88,12 @@ function Form() {
                 <label htmlFor='name'> 
                     Name:
                     <input type='text' name='name' id='name' value={formState.name} onChange={inputChange}/>
-                    {errors.name.length > 0 ? <p className="error">{errors.name}</p> : null}
+                    {errors.name.length > 0 ? <p className="error" data-cy = "nameError">{errors.name}</p> : null}
                 </label>
                 <label htmlFor='email'>
                     E-Mail:
                     <input type = 'email' name='email' id='email' value={formState.email} onChange={inputChange}/>
-                    {errors.email.length > 0 ? <p className="error">{errors.email}</p> : null}
+                    {errors.email.length > 0 ? <p className="error" data-cy = "emailError">{errors.email}</p> : null}
                 </label>
                 <label htmlFor='password'>
                     Password:
